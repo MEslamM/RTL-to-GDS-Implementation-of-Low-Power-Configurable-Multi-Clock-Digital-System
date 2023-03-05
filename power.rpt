@@ -1,0 +1,96 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 15.20-p005_1 (64bit) 11/11/2015 11:16 (Linux 2.6.18-194.el5)
+*	
+*
+* 	Date & Time:	2022-Aug-20 17:19:14 (2022-Aug-20 09:19:14 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: SYS_TOP
+*
+*	Liberty Libraries used: 
+*	        func_setup_analysis_view: /home/IC/tsmc_fb_cl013g_sc/aci/sc-m/synopsys/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:       1.08 
+*
+*       Power View : func_setup_analysis_view
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile report/power.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.36578924 	   71.5729%
+Total Switching Power:       0.13174924 	   25.7790%
+Total Leakage Power:         0.01353392 	    2.6481%
+Total Power:                 0.51107240 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                        0.2524     0.01835    0.004572      0.2753       53.87 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                    0.08519      0.0592    0.008022      0.1524       29.82 
+Clock (Combinational)            0.02072     0.05113     0.00088     0.07273       14.23 
+Clock (Sequential)              0.007501    0.003064   6.033e-05     0.01063       2.079 
+-----------------------------------------------------------------------------------------
+Total                             0.3658      0.1317     0.01353      0.5111         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.08     0.3658      0.1317     0.01353      0.5111         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+UART_TX_CLK                    1.339e-05   1.696e-05   6.284e-05   9.319e-05     0.01823 
+ALU_CLK                                0           0           0           0           0 
+SCAN_CLK                               0           0           0           0           0 
+REF_CLK                          0.02725      0.0537   0.0003228     0.08127        15.9 
+UART_RX_CLK                    0.0009535   0.0004837   0.0005546    0.001992      0.3897 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)     0.02822      0.0542   0.0009403     0.08336       16.31 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:       REF_SCAN_CLK__L3_I1 (CLKINVX40M): 	    0.0212 
+* 		Highest Leakage Power:     FE_OFC20_REF_SCAN_RST (BUFX32M): 	 7.186e-05 
+* 		Total Cap: 	1.96886e-11 F
+* 		Total instances in design:  1331
+* 		Total instances in design with no power:     5
+*          Total instances in design with no activity:     5
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
